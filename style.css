@@ -1,11 +1,8 @@
 :root {
     --cls-primary: #ffffff;
-    --cls-text: #001725;
-    --blue-gray: #d8d8d8;
-    --green-bg: #32b24d;
-    --yellow-bg: #fed349;
+    --cls-text: #4a4a4a;
   }
-
+  
 *,
 *::before,
 *::after {
@@ -16,14 +13,15 @@
 
 * {
     outline: red solid 1px;
-  }
+}
 
-body {
+.container__style {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    width: 1128px;
+    width: 100%;
+    min-width: 300px;
+    max-width: 1128px;
     margin: 0 auto;
 }
 nav{
@@ -33,44 +31,69 @@ nav{
     padding: 0 24px;
     
     height: 64px;
-    background-color: white;
+    background-color: var(--cls-primary);
 }
-.logo{
-    display: flex;
-    font-size: 32px;
-    
-
-}
-.nav__link{
-    display: flex;
-    gap: 16px;
-}
-.section{
-    display:grid;
-    grid-template-columns: 672px 432px; 
+.section {
+    display: grid;
+    grid-template-columns: 672px 400px; 
     padding: 32px 0px 32px 24px;
+    gap: 32px;
 }
+
+
+
 .course{
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 คอลัมน์ที่มีขนาดเท่ากัน */
     grid-template-rows: repeat(2, auto); /* 2 แถวที่ขนาดขึ้นอยู่กับคอนเทนต์ */
-    gap: 10px; /* ระยะห่างระหว่างคอลัมน์และแถว */
-}
-.image__small{
-    height: auto;
-    width: 35%;
-    object-fit: cover;
-}
-.hero__info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    gap: 32px; 
 }
 .container__side{
  padding: 16px 0px 16px 16px;
  gap: 16px;
+ width: 100%;
+}
+.info__side{
+    width: 65% ;
+}
+.text__big{
+margin: 32px 0px;
+
+color: var(--cls-text);
+font-weight: bold;
+font-size: 32px;
+}
+.text__medium{
+    margin-top :16px;
+    margin-bottom: 8px;
+
+    color: var(--cls-text);
+    font-weight: bold;
+    font-size: 20px;
+}
+.image__small{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+.image__landscape{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
 }
 
-.info__side{
-    width: 269px ;
+@media (max-width: 640px) {
+    .section, .course {
+        grid-template-columns: 1fr; /* เปลี่ยนให้เป็น 1 คอลัมน์ */
+    }
+    .container__side{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hidden__section{
+        display: none;
+    }
+    
 }

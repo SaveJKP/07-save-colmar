@@ -7,147 +7,236 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header>
-      <nav>
-        <div class="logo">
-          <img src="images/ic-logo.svg" alt="" />
-          <p>COLMAR</p>
-          <p>ACADEMY</p>
-        </div>
-        <ul class="nav__link">
-          <li><a href="#">On campus</a></li>
-          <li><a href="#">Online</a></li>
-          <li><a href="">or companies</a></li>
-          <li><a href="">Sign in</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section class="section">
-        <img class="h-[478.95px] object-cover" src="images/banner.jpg" alt="" />
-        <div class="hero__info">
-          <h1>Learn something <br />new everyday</h1>
-          <div>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Repudiandae maxime sed eius praesentium neque est!
+  <body class="bg-[#f3f5f5]">
+    <div class="container__style">
+      <header>
+        <nav>
+          <div class="flex justify-start items-center w-[32px]">
+            <img src="images/ic-logo.svg" alt="" />
+            <p class="font-bold">COLMAR</p>
+            <p class="text-[#4a4a4a]">ACADEMY</p>
           </div>
-          <button>Start here</button>
-        </div>
-      </section>
-      <section class="section">
-        <div>
-          <img class="w-[648px]" src="images/information-main.jpg" alt="" />
-          <h2>It doesn't hurt to keep practicing</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem explicabo sit, autem adipisci modi culpa animi
-            assumenda voluptatum debitis qui dicta sint quis doloribus unde!
-            Inventore numquam eius a accusantium!
-          </p>
-          <p>Emanuel, Sr Strategist at Hiring.com</p>
-        </div>
-        <div class="">
-          <div class="flex container__side">
-            <img class="image__small" src="images/information-orientation.jpg" alt="" />
-            <div class="info__side">
-              <h3>Orientation date</h3>
-              <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-              <a href="#">Read more</a>
+          <ul class="flex gap-[16px]">
+            <li><a href="#">On campus</a></li>
+            <li><a href="#">Online</a></li>
+            <li><a href="">or companies</a></li>
+            <li><a href="">Sign in</a></li>
+          </ul>
+        </nav>
+      </header>
+  
+      <main>
+        <section class="section bg-[#d8d8d8]">
+          <img class="h-[478.95px] object-cover" src="images/banner.jpg" alt="" />
+          <div class="flex flex-col justify-center sm:px-4 py-8 ">
+            <h1 class="text__big">Learn something <br />new everyday</h1>
+            <div class="text__medium">
+              Lorem ipsum dolor, sit <br />consectetur adipisicing .
+            </div>
+            <button class="bg-[#4a4a4a] text-white py-[8px] mt-[32px] w-[250px]">
+              Start here
+            </button>
+          </div>
+        </section>
+        <section class="section">
+          <div class="hidden__section">
+            <img class="w-[648px]" src="images/information-main.jpg" alt="" />
+            <h2 class="text__big">It doesn't hurt to keep practicing</h2>
+            <p class="mb-[54px]">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem explicabo sit, autem adipisci modi culpa animi
+              assumenda voluptatum debitis qui dicta sint quis doloribus unde!
+              Inventore numquam eius a accusantium!"
+            </p>
+            <p class="text-[14px]">Emanuel, Sr Strategist at Hiring.com</p>
+          </div>
+          <div class="h-[100%] border-l">
+            <div class="flex container__side">
+              <img
+                class="image__small"
+                src="images/information-orientation.jpg"
+                alt=""
+              />
+              <div class="info__side">
+                <h3 class="text__medium">Orientation date</h3>
+                <p class="text-[14px] mb-[8px]">Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                <a class="text-blue-500" href="#">Read more</a>
+              </div>
+            </div>
+            <div class="flex container__side">
+              <img
+                class="image__small"
+                src="images/information-campus.jpg"
+                alt=""
+              />
+              <div class="info__side">
+                <h3 class="text__medium">Our campus</h3>
+                <p class="text-[14px] mb-[8px]">
+                  Find which campus is close by you
+                </p>
+                <a class="text-blue-500" href="#">Read more</a>
+              </div>
+            </div>
+            <div class="flex container__side bg-[#d8d8d8]">
+              <img
+                class="image__small"
+                src="images/information-guest-lecture.jpg"
+                alt=""
+              />
+              <div class="info__side">
+                <h3 class="text__medium">Our guest lecture</h3>
+                <p class="text-[14px] mb-[8px]">
+                  Join a keynote with Oliver Sack <br />about music in medical
+                  treatment
+                </p>
+                <a class="text-blue-500" href="#">Read more</a>
+              </div>
             </div>
           </div>
-          <div class="flex container__side">
-            <img class="image__small" src="images/information-orientation.jpg" alt="" />
-            <div class="info__side">
-              <h3>Orientation date</h3>
-              <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-              <a href="#">Read more</a>
+        </section>
+        <section class="px-[72px] py-[32px] bg-[#eaebec]">
+          <h2 class="text__big flex justify-center items-center mt-[0px]">
+            Start learning
+          </h2>
+          <div class="course">
+            <div class="bg-[#ffffff]">
+              <img
+                class="image__landscape hidden__section"
+                src="images/course-software.jpg"
+                alt=""
+              />
+              <div class="m-[16px]">
+                <h3 class="text__medium flex justify-center">
+                  Software engineering
+                </h3>
+                <p class="py-[8px] hidden__section">COURSES</p>
+                <p class="hidden__section">Web Development, Moblie <br />Development, iOT, APIs</p>
+              </div>
+            </div>
+            <div class="bg-[#ffffff]">
+              <img
+                class="image__landscape hidden__section"
+                src="images/course-computer-art.jpg"
+                alt=""
+              />
+              <div class="m-[16px]">
+                <h3 class="text__medium flex justify-center ">
+                  Computer art
+                </h3>
+                <p class="py-[8px] hidden__section">COURSES</p>
+                <p class="hidden__section">Imaging & Design, Web Design, <br />Motion Graphics & Visual Effects, <br />Computer Animation</p>
+              </div>
+            </div>
+            <div class="bg-[#ffffff]">
+              <img
+                class="image__landscape hidden__section"
+                src="images/course-design.jpg"
+                alt=""
+              />
+              <div class="m-[16px]">
+                <h3 class="text__medium flex justify-center">
+                  Design
+                </h3>
+                <p class="py-[8px] hidden__section">COURSES</p>
+                <p class="hidden__section">User Experience Design, User <br />Research, Visual Design</p>
+              </div>
+            </div>
+            <div class="bg-[#ffffff]">
+              <img
+                class="image__landscape hidden__section"
+                src="images/course-data.jpg"
+                alt=""
+              />
+              <div class="m-[16px]">
+                <h3 class="text__medium flex justify-center">
+                  Data
+                </h3>
+                <p class="py-[8px] hidden__section">COURSES</p>
+                <p class="hidden__section">Data Science, Big Data, SQL, Data <br />Visualization</p>
+              </div>
+            </div>
+            <div class="bg-[#ffffff]">
+              <img
+                class="image__landscape hidden__section"
+                src="images/course-business.jpg"
+                alt=""
+              />
+              <div class="m-[16px]">
+                <h3 class="text__medium flex justify-center">
+                  Business
+                </h3>
+                <p class="py-[8px] hidden__section">COURSES</p>
+                <p class="hidden__section">Product Development, Business <br />Development, Startup</p>
+              </div>
+            </div>
+            <div class="bg-[#ffffff]">
+              <img
+                class="image__landscape hidden__section"
+                src="images/course-software.jpg"
+                alt=""
+              />
+              <div class="m-[16px]">
+                <h3 class="text__medium flex justify-center">
+                  Marketing
+                </h3>
+                <p class="py-[8px] hidden__section">COURSES</p>
+                <p class="hidden__section">Analytics, Content Marketing, <br />Mobile Marketing</p>
+              </div>
             </div>
           </div>
-          <div class="flex container__side">
-            <img class="image__small" src="images/information-orientation.jpg" alt="" />
-            <div class="info__side">
-              <h3>Orientation date</h3>
-              <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-              <a href="#">Read more</a>
+        </section>
+        <section>
+          <h2 class="text__big flex justify-center items-center">
+            Thesis exhibit
+          </h2>
+          <div class="section pt-[0px]">
+            <div class="flex flex-col">
+              <video src="videos/thesis.mp4"></video>
+              <h2 class="text__big hidden__section">Reimagine urban</h2>
+              <p class="hidden__section">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem explicabo sit, autem adipisci modi culpa animi
+                assumenda voluptatum debitis qui dicta sint quis doloribus unde!
+                Inventore numquam eius a accusantium!"
+              </p>
+            </div>
+            <div class="h-[100%] hidden__section">
+              <div class="flex container__side bg-[#d8d8d8]">
+                <img
+                  class="image__small"
+                  src="images/thesis-fisma.jpg"
+                  alt=""
+                />
+                <div class="info__side">
+                  <h3 class="text__medium">Fisma: Design and Prototype</h3>
+                  <p class="text-[14px] mb-[8px]">Designer showcase of new <br>prototype product</p>
+                </div>
+              </div>
+              <div class="flex container__side">
+                <img
+                  class="image__small"
+                  src="images/thesis-now-and-then.jpg"
+                  alt=""
+                />
+                <div class="info__side">
+                  <h3 class="text__medium">Now and then</h3>
+                  <p class="text-[14px] mb-[8px]">
+                    Research study about New York
+                  </p>
+                </div>
+              </div>
+          
             </div>
           </div>
-        </div>
-      </section>
-      <section class="px-[72px] py-[32px]">
-        <h2>Start learning</h2>
-        <div class="course">
-          <div>
-            <img src="images/course-software.jpg" alt="" />
-            <h3>Software engineering</h3>
-            <p>COURSE</p>
-            <p>Web Development, Moblie <br>Development, iOT, APIs</p>
-          </div>
-          <div>
-            <img src="images/course-software.jpg" alt="" />
-            <h3></h3>
-            <p></p>
-            <p></p>
-          </div>
-          <div>
-            <img src="images/course-software.jpg" alt="" />
-            <h3></h3>
-            <p></p>
-            <p></p>
-          </div>
-          <div>
-            <img src="images/course-software.jpg" alt="" />
-            <h3></h3>
-            <p></p>
-            <p></p>
-          </div>
-          <div>
-            <img src="images/course-software.jpg" alt="" />
-            <h3></h3>
-            <p></p>
-            <p></p>
-          </div>
-          <div>
-            <img src="images/course-software.jpg" alt="" />
-            <h3></h3>
-            <p></p>
-            <p></p>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div>
-          <img class="image" src="images/information-main.jpg" alt="" />
-          <h2>It doesn't hurt to keep practicing</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem explicabo sit, autem adipisci modi culpa animi
-            assumenda voluptatum debitis qui dicta sint quis doloribus unde!
-            Inventore numquam eius a accusantium!
-          </p>
-          <p>Emanuel, Sr Strategist at Hiring.com</p>
-        </div>
-        <div >
-          <div class="flex container__side">
-            <img class="image__small" src="images/information-orientation.jpg" alt="" />
-            <div class="info__side">
-              <h3>Orientation date</h3>
-              <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-              <a href="#">Read more</a>
-            </div>
-          </div>
-          <div class="flex container__side">
-            <img class="image__small" src="images/information-orientation.jpg" alt="" />
-            <div class="info__side">
-              <h3>Orientation date</h3>
-              <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-              <a href="#">Read more</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer></footer>
+        </section>
+      </main>
+      <footer class="py-[16px] px-[32px] border-t">
+        <div class="flex justify-between">
+          <p class="text-[14px]">© 2016 Copyright Colmar Academy. All rights reserved</p>
+          <div class="flex gap-[16px]">
+            <p class="text-[14px]">Terms</p>
+            <p class="text-[14px]">Privacy</p>
+      </footer>
+    </div>
   </body>
 </html>
